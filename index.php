@@ -67,9 +67,29 @@
                            $i = 0;
                        }
                     }
-                    echo "Lançou a moeda $nmrArremesso vezes até conseguir 5 caras";
+                    echo "Lançou a moeda $nmrArremesso vezes até conseguir 5 caras.";
                 ?>
             </div>                
+        </li>
+
+        <li>
+            <p>Do/while</p>
+            <div>
+                <?php
+                $i = 0;
+                $nmrArremesso = 0;
+                do {
+                    $moeda = mt_rand(0,1);
+                    $nmrArremesso++;
+                    if($moeda == 1){
+                        $i++;
+                    }else{
+                        $i=0;
+                    }
+                }while($i != 1);
+                echo "Lançou a moeda $nmrArremesso vezes até conseguir 1 caras.";
+                ?>
+            </div>
         </li>
     </ol>
 </body>
