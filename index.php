@@ -28,11 +28,28 @@
             <p>Random number</p>
             <div>
                     <?php 
-                        for($i=1;mt_rand(0,100);$i++){
+                        for($i=1;$i<mt_rand(0,100);$i++){
                             echo $i.",";
                         }
                     ?>
             </div>
+        </li>
+
+        <li>
+            <p>Multiplicao 2</p>
+            <table border=1>
+                    <?php 
+                        $num2 = 10;
+                        
+                        for($i=1;$i<=$num2;$i++){
+                            echo "<tr>";
+                            echo "<td>";
+                            echo 2 .' x '. $i .' = '. (2*$i);
+                            echo "</td>";
+                            echo "</tr>";
+                        }
+                    ?>
+            </table>
         </li>
     </ol>
 </body>
