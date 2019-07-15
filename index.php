@@ -18,9 +18,20 @@
                 <?php
                     $num = 101;
                     for($i=1;$i<$num;$i++){
-                        echo $i."<br>";
+                        echo $i.",";
                     }
                 ?>
+            </div>
+        </li>
+
+        <li>
+            <p>Random number</p>
+            <div>
+                    <?php 
+                        for($i=1;mt_rand(0,100);$i++){
+                            echo $i.",";
+                        }
+                    ?>
             </div>
         </li>
     </ol>
