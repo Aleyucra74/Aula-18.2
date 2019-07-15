@@ -127,6 +127,52 @@
                     ?>
                 </div>
         </li>
+
+        <li>
+                <p>7</p>
+        </li>
+
+        <li>
+            <p>Utilizandoafunção“Range”(​http://php.net/manual/en/function.range.php​),criarumintervalodeletras(deaatéo),imprimirumvalorquediga“Naposição
+                [index],estáovalor[value]”,emque[value]serásubstituídoporcadavalordoarraye[index]representaoíndice</p>
+            <div>
+                <?php
+                    $letras = range("a","o");
+
+                    foreach ($letras as $posicao => $letra) {
+                        echo "na posicao $posicao esta o valor $letra<br>";
+                    }
+                ?>
+            </div>
+        </li>
+
+        <li>
+            <p>Definir uma variável ​$mascote ​que seja um array associativo</p>
+            <div>
+            <?php 
+                $mascote = [
+                    'animal' => 'Cachorro',
+                    'idade' => 4,
+                    'altura' => 40,
+                    'nome' => 'rex'
+                ];
+                echo '<pre>';
+                print_r($mascote);
+                echo '<pre>';
+            ?>
+            </div>
+        </li>
+
+        <li>
+                <p>Percorrer os valores do array comum ​foreach ​que imprima</p>
+                <div>
+                <?php
+                    foreach ($mascote as $key => $value) {
+                        echo $key." : ".$value."<br>";
+                    }
+                ?>
+                </div>
+        </li>
     </ol>
 </body>
 </html>
