@@ -87,9 +87,45 @@
                         $i=0;
                     }
                 }while($i != 1);
-                echo "Lançou a moeda $nmrArremesso vezes até conseguir 1 caras.";
+                echo "Lançou a moeda $nmrArremesso vezes até conseguir 1 cara.";
                 ?>
             </div>
+        </li>
+
+        <li>
+                <p>Definir um array com 5 strings que sejam nomes. Percorre esse array para imprimir todos os nomes na tela. <br>
+                a. usar for. <br>
+                b. usar while. <br>
+                c. usar do/while.</p>
+                <div>
+                    <?php
+                        $nomes = [
+                            'Sérgio',
+                            'Thomaz',
+                            'Fernando',
+                            'Ana',
+                            'Marcos'
+                        ];
+
+                        for($i=0;$i<count($nomes);$i++){
+                            echo $nomes[$i].'<br>';
+                        }
+                        echo "<br>";
+
+                        $i=0;
+                        while ($i < count($nomes)) {
+                            echo $nomes[$i].'<br>';
+                            $i++;
+                        }
+                        echo "<br>";
+
+                        $i= count($nomes)-1;
+                        do {
+                            echo $nomes[$i].'<br>';
+                            $i--;
+                        } while ($i >=0);
+                    ?>
+                </div>
         </li>
     </ol>
 </body>
